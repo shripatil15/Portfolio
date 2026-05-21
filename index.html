@@ -1,20 +1,166 @@
+# Updated index.html
 
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shrikant | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Shrikant Patil | Senior Software Engineer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 15px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 40px;
+    }
+
+    #hero {
+      background: linear-gradient(to right, #2563eb, #1e3a8a);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    #hero h2 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    #hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: white;
+      color: #1e3a8a;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      margin: 10px;
+    }
+
+    .about-content {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .about-photo {
+      width: 180px;
+      border-radius: 50%;
+      border: 5px solid #2563eb;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .skill {
+      background: #2563eb;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .project-card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .project-card h3 {
+      margin-bottom: 10px;
+      color: #1e3a8a;
+    }
+
+    footer {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .contact-links a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    @media(max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      #hero h2 {
+        font-size: 2rem;
+      }
+
+      .about-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <!-- Header -->
   <header>
     <nav>
-      <h1>Shrikant</h1>
+      <h1>Shrikant Patil</h1>
       <ul>
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -23,44 +169,212 @@
   <!-- Hero Section -->
   <section id="hero">
     <h2>Hello, I'm Shrikant 👋</h2>
-    <p>Software Engineer | Designer | Problem Solver</p>
-    <a href="#projects" class="btn">View My Work</a>
+    <p>Senior Software Engineer | Java Developer | Microservices Expert</p>
+
+    <a href="#projects" class="btn">View My Projects</a>
+
+    <!-- Resume Download Button -->
+    <a href="shrikant_resume.pdf" download class="btn">Download Resume</a>
   </section>
 
   <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
-    <p>
-      I specialize in Java, Spring MVC, REST APIs, Kafka, and system design.
-      I love building scalable applications and designing modular spaces.
-    </p>
+    <div class="about-content">
+      <img src="profile1.jpg" alt="Shrikant Patil" class="about-photo">
+
+      <div>
+        <p>
+         Highly dedicated and detail-oriented Senior Java Developer with 8 years of comprehensive experience. Ex- 
+pertise in Core Java (8/11/17), Microservices architecture, and the Spring Boot framework. Proven ability 
+to migrate legacy systems (C++ to Java), integrate critical third-party APIs (Stripe, Twilio), and ensure 
+high system availability using cloud platforms like AWS. Strong technical communication skills, focused on 
+translating user problems into robust, production-ready solutions using Agile and CI/CD practices. 
+        </p>
+
+        <p style="margin-top:15px;">
+          Experienced in designing scalable backend systems, API integrations,
+          cloud deployment, debugging, maintenance, and leading development teams.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+
+    <div class="skills">
+      <span class="skill">Java 8/11/17</span>
+      <span class="skill">Spring Boot</span>
+      <span class="skill">Spring MVC</span>
+      <span class="skill">REST APIs</span>
+      <span class="skill">Microservices</span>
+      <span class="skill">Kafka</span>
+      <span class="skill">AWS</span>
+      <span class="skill">AWS Lambda</span>
+      <span class="skill">Docker</span>
+      <span class="skill">Kubernetes</span>
+      <span class="skill">MongoDB</span>
+      <span class="skill">MySQL</span>
+      <span class="skill">MS SQL</span>
+      <span class="skill">Splunk</span>
+      <span class="skill">Grafana</span>
+      <span class="skill">JUnit</span>
+      <span class="skill">Selenium</span>
+    </div>
   </section>
 
   <!-- Projects Section -->
   <section id="projects">
     <h2>Projects</h2>
+
     <div class="project-card">
-      <h3>Project One</h3>
-      <p>A brief description of your project goes here.</p>
+      <h3>Charls Schwab (Capital Markets)</h3>
+      <p>
+        Modernized legacy brokerage and customer management applications into scalable microservices architecture for capital market operations. The platform manages brokerage accounts, customer onboarding, segmentation, treatment processing, and real-time financial data integration.
+
+The project involved migration of old monolithic applications into Java Spring Boot microservices while improving scalability, API performance, customer segmentation processing, and real-time data synchronization using Data Bridge services.
+      </p>
+    
+    </div>
+
+    <div class="project-card">
+      <h3>Fiserv(Issuer Solutions- Credit Cards Processing)</h3>
+      <p>
+       Project Description
+
+Modernized legacy card processing applications for fraud and non-fraud transaction handling using Java Microservices architecture. The system processes debit and credit card transactions in real-time while identifying suspicious activities and reducing false-positive fraud alerts.
+
+Responsibilities
+Developed scalable microservices using Java 17 and Spring Boot
+Migrated monolithic legacy applications to cloud-ready microservices
+Built REST APIs for card authorization and transaction processing
+Integrated fraud detection rules engine for suspicious transaction validation
+Implemented Kafka-based event-driven transaction processing
+Developed real-time monitoring dashboards using Grafana and Splunk
+Improved fraud detection accuracy and reduced transaction processing latency
+Worked on secure payment transaction flows and PCI compliance standards
+Implemented AWS cloud deployment and CI/CD pipelines using Jenkins
+Created unit and integration test cases using JUnit and Mockito
+Collaborated with business teams for card lifecycle and fraud workflow enhancements
+      </p>
+      <p>
+        Technologies used: Core Java, Spring MVC, MySQL, Selenium.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>WordPress Business Websites</h3>
+      <p>
+        Developed and maintained responsive business websites.
+      </p>
+
+      <ul style="margin-top:10px; padding-left:20px;">
+        <li><a href="https://pokketcafe.com" target="_blank">pokketcafe.com</a></li>
+        <li><a href="https://rssquarz.com" target="_blank">rssquarz.com</a></li>
+        <li><a href="http://www.winwineximindia.com" target="_blank">winwineximindia.com</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2>Work Experience</h2>
+
+    <div class="project-card">
+      <h3>Talent On Lease| Senior Java Developer  (Nov-2025 -April 2026 )</h3>
+      <p>
+         Modernized brokerage account service by migrating legacy modules to microservices architecture           
+using Java 17 and Spring Boot.  
+· Implemented secure transaction workflows and optimized API orchestration for high-volume 
+trading operations.  
+· Leveraged Kafka for real-time trade event streaming and caching strategies to reduce latency.  
+· Coordinated with client stakeholders to align technical solutions with capital market compliance 
+requirements.  
+· Enhanced monitoring and logging using Grafana and Splunk for production reliability 
+      </p>
     </div>
     <div class="project-card">
-      <h3>Project Two</h3>
-      <p>Another project description goes here.</p>
+      <h3>Mphasis Pvt Ltd (May 2022 - Oct 2025)</h3>
+      <p>
+       Lead the critical migration of legacy C++ banking code to a modern Java 17/Spring Boot 
+microservices architecture, utilizing Java Reactive Programming, MapStruct, and Flyway. 
+• Coordinated directly with business users and stakeholders to finalize technical designs and require- 
+ments, ensuring alignment between development efforts and domain needs. 
+• Implemented robust JUnit test cases across the application codebase, ensuring high code quality and 
+application stability. 
+• Utilized Agile methodologies and managed CI/CD pipelines using Jenkins for continuous integration 
+and automated deployment. 
+• Monitored production environment health and performance using tools including Splunk and AWS ser- 
+vices. 
+      </p>
+    </div>
+    <div class="project-card">
+      <h3>EyecareLive.Inc  (April 2019 - May 2022)</h3>
+      <p>
+        Integrated critical third-party payment and communication services, including Stripe and Twilio, into 
+core platform APIs to enable digital vision care and virtual appointments. 
+• Designed and developed scalable RESTful APIs for the digital eye health platform to support new prod- 
+uct functionalities and partner integrations. 
+• Delivered features using Microservices architecture, leveraging Spring MVC/Boot, AWS Lambda, and 
+MongoDB for persistence in a US-based product environment. 
+• Managed continued maintenance, bug fixes, and process migration updates for web applications to im- 
+prove user experience and platform functionality. 
+• Wrote and maintained comprehensive JUnit test cases to validate business logic and ensure application 
+reliability. 
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>Rssquarz Tech Solutions Pvt Ltd (May 2017 - Oct 2018)</h3>
+      <p>
+         Developed a full-featured Employee Collaboration Project, including modules for attendance tracking, 
+task management, and bug reporting, using Core Java and Spring MVC. 
+• Coordinated with business users to gather and refine requirements, ensuring project deliverables met 
+internal operational needs. 
+• Utilized Selenium for debugging and testing existing project functionalities. 
+      </p>
+    </div>
+
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+
+    <div class="project-card">
+      <h3>B.E (Information Technology)</h3>
+      <p>Shivaji University, Kolhapur - 2015</p>
+    </div>
+
+    <div class="project-card">
+      <h3>12th Science</h3>
+      <p>State Board of Maharashtra - 2010</p>
     </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:shri.patil188@gmail.com">yourname@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+
+    <div class="contact-links">
+      <p><strong>Phone:</strong> <a href="tel:+918888647404">+91 8888647404</a></p>
+      <p><strong>Email:</strong> <a href="mailto:shri.patil188@gmail.com">shri.patil188@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong>
+        <a href="https://linkedin.com/in/shrikant-patil-298b7010b" target="_blank">
+          linkedin.com/in/shrikant-patil-298b7010b
+        </a>
+      </p>
+      <p><strong>Location:</strong> Pune, Maharashtra, India</p>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2026 Shrikant. All rights reserved.</p>
+    <p>© 2026 Shrikant Patil | Portfolio Website</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
+ 
