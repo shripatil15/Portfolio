@@ -50,7 +50,9 @@
     }
 
     #hero {
-      background: linear-gradient(to right, #2563eb, #1e3a8a);
+      background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
       color: white;
       text-align: center;
       padding: 100px 20px;
@@ -80,8 +82,10 @@
     .about-content {
       display: flex;
       align-items: center;
+      justify-content: center; /* center photo and text horizontally */
       gap: 30px;
       flex-wrap: wrap;
+      text-align: center; /* center text next to photo */
     }
 
     .about-photo {
@@ -90,9 +94,21 @@
       border: 5px solid #2563eb;
     }
 
+    #about {
+  text-align: center;   /* Centers all content inside the section */
+  padding: 2rem;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+
     .skills {
       display: flex;
       flex-wrap: wrap;
+      
       gap: 10px;
       margin-top: 20px;
     }
@@ -104,7 +120,54 @@
       border-radius: 20px;
       font-size: 14px;
     }
+        #skills {
+  text-align: center;   /* Centers all content inside the section */
+  padding: 2rem;
+}
 
+#skills h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+    #projects {
+  text-align: center;   /* Centers all content inside the section */
+  padding: 2rem;
+}
+
+#projects h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+    #experience {
+  text-align: center;   /* Centers all content inside the section */
+  padding: 2rem;
+}
+
+#experience h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+    #education {
+  text-align: center;   /* Centers all content inside the section */
+  padding: 2rem;
+}
+
+#education h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+    #contact {
+  text-align: center;   /* Centers all content inside the section */
+  padding: 2rem;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
     .project-card {
       background: white;
       padding: 25px;
